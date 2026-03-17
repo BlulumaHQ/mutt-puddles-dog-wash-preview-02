@@ -65,7 +65,7 @@ export const PetGroomer = () => (
     title="Pet Groomer in Tacoma, WA"
     content={[
       "If you want to treat your pet to a nice grooming session, we are the specialists who will offer you the professional services you need. Serving customers in Tacoma, WA, we can offer you grooming services or help you become the pet groomer of your furry friend.",
-      "With Mutt Puddles Dog Wash LLC, you will rely on skilled and experienced people who prioritize your pet's comfort and well-being.",
+      "With Mutt Puddles Dog Wash, you will rely on skilled and experienced people who prioritize your pet's comfort and well-being.",
       "Our groomers are trained to handle all breeds and sizes, ensuring every pet receives personalized care."
     ]}
     ctaText="Book Now"
