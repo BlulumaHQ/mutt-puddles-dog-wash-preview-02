@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import SectionHeading from "../components/SectionHeading";
 import { motion } from "framer-motion";
-import { ShowerHead, Scissors, Dog, Sparkles, Heart } from "lucide-react";
+import { ShowerHead, Scissors, Dog, Sparkles, Heart, Clock, Shield, Medal } from "lucide-react";
 
 const services = [
   { icon: ShowerHead, title: "Dog Wash Studio", desc: "Our state-of-the-art studio features clean tubs, professional-grade equipment, and a spa-like atmosphere for your pet.", link: "/dog-wash-studio-tacoma-wa/" },
