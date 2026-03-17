@@ -12,7 +12,7 @@ const AboutUs = () => (
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.4 }}>
             <SectionHeading overline="ABOUT US" title="Who We Are" />
             <p className="prose-body text-muted-foreground mb-4">
-              Renowned for our professional services and the qualities of our facility, we have been running Mutt Puddles Dog Wash LLC since 2007 with the goal to meet the individual requirements of every customer.
+              Renowned for our professional services and the qualities of our facility, we have been running Mutt Puddles Dog Wash since 2007 with the goal to meet the individual requirements of every customer.
             </p>
             <p className="prose-body text-muted-foreground mb-4">
               Whether you are looking for a dog groomer, or you want to learn how to groom your pets without having to rely on professionals, we are here to help. The environment we create for our clients and their pets is essential for our services, which is why we have special arrangements for different kinds of pets.
