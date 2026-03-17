@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Phone, Scissors, ShowerHead, Star, BadgePercent, Quote } from "lucide-react";
+import { Phone, Scissors, ShowerHead, Star, BadgePercent, Quote, Clock, Shield, Sparkles, Medal } from "lucide-react";
 import PageMeta from "../components/PageMeta";
 import SectionHeading from "../components/SectionHeading";
 import ContactForm from "../components/ContactForm";
