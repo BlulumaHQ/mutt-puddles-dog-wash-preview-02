@@ -33,7 +33,7 @@ const ServicePage = ({ title, metaTitle, content, ctaText, ctaLink }: {
 
 export const DogWashStudio = () => (
   <ServicePage
-    metaTitle="Dog Wash Studio | Mutt Puddles Dog Wash LLC"
+    metaTitle="Dog Wash Studio | Mutt Puddles Dog Wash"
     title="Dog Wash Studio in Tacoma, WA"
     content={[
       "Our dog wash studio is designed to provide a comfortable and enjoyable experience for both you and your pet. We feature state-of-the-art tubs, professional grooming tables, and a relaxing spa-like atmosphere.",
