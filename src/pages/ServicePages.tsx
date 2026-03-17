@@ -47,7 +47,7 @@ export const DogWashStudio = () => (
 
 export const ServiceDogWash = () => (
   <ServicePage
-    metaTitle="Self-Service Dog Wash | Mutt Puddles Dog Wash LLC"
+    metaTitle="Self-Service Dog Wash | Mutt Puddles Dog Wash"
     title="Self-Service Dog Wash in Tacoma, WA"
     content={[
       "We offer clean tubs, towels, shampoos, conditioners, and perfumes to clients who want to groom their pets on their own. Our self-service facility presents you with all the professional grooming tools and tables you may need.",
