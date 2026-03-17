@@ -47,7 +47,7 @@ const Index = () => {
   return (
     <>
       <PageMeta
-        title="Home | Mutt Puddles Dog Wash LLC"
+        title="Home | Mutt Puddles Dog Wash"
         description="Professional dog grooming and self-service wash facility in Tacoma, WA. Since 2007, providing a spa-like experience for you and your furry friends."
       />
 
