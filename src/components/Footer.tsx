@@ -70,7 +70,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="section-container py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-primary-foreground/50">
-            © {new Date().getFullYear()} Mutt Puddles Dog Wash LLC
+            © {new Date().getFullYear()} Mutt Puddles Dog Wash
           </p>
           <p className="text-xs text-primary-foreground/40">
             Website Launch by{" "}

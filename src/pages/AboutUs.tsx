@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const AboutUs = () => (
   <>
-    <PageMeta title="About Us | Mutt Puddles Dog Wash LLC" />
+    <PageMeta title="About Us | Mutt Puddles Dog Wash" />
     <section className="py-20 lg:py-28">
       <div className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">

@@ -16,7 +16,7 @@ const testimonials = [
 
 const Testimonials = () => (
   <>
-    <PageMeta title="Testimonials | Mutt Puddles Dog Wash LLC" />
+    <PageMeta title="Testimonials | Mutt Puddles Dog Wash" />
     <section className="py-20 lg:py-28">
       <div className="section-container max-w-4xl">
         <SectionHeading overline="TESTIMONIALS" title="What Our Clients Say" centered />

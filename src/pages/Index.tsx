@@ -254,7 +254,7 @@ const Index = () => {
                 />
               </div>
               <div className="bg-background rounded-card card-shadow p-6">
-                <h3 className="font-extrabold text-lg text-foreground mb-2">Mutt Puddles Dog Wash LLC</h3>
+                <h3 className="font-extrabold text-lg text-foreground mb-2">Mutt Puddles Dog Wash</h3>
                 <p className="text-sm text-muted-foreground mb-1">605 156th St E, Tacoma, WA 98445</p>
                 <a href="tel:2535313387" className="text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
                   (253) 531-3387

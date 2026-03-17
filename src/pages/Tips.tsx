@@ -13,7 +13,7 @@ const tips = [
 
 const Tips = () => (
   <>
-    <PageMeta title="Tips | Mutt Puddles Dog Wash LLC" />
+    <PageMeta title="Tips | Mutt Puddles Dog Wash" />
     <section className="py-20 lg:py-28">
       <div className="section-container">
         <SectionHeading overline="HELPFUL TIPS" title="Pet Grooming Tips" description="Keep your furry friend looking and feeling great between grooming sessions." centered />

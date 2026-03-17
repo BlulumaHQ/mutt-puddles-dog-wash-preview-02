@@ -68,7 +68,7 @@ const Header = () => {
       {/* Main nav */}
       <div className="section-container flex items-center justify-between py-3">
         <Link to="/" className="text-xl md:text-2xl font-extrabold text-foreground tracking-tight">
-          Mutt Puddles Dog Wash LLC
+          Mutt Puddles Dog Wash
         </Link>
 
         {/* Desktop nav */}

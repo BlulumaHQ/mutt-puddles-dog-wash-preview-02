@@ -17,7 +17,7 @@ const item = { hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transiti
 
 const Services = () => (
   <>
-    <PageMeta title="Services | Mutt Puddles Dog Wash LLC" />
+    <PageMeta title="Services | Mutt Puddles Dog Wash" />
     <section className="py-20 lg:py-28">
       <div className="section-container">
         <SectionHeading
