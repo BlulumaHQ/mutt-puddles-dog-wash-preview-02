@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-extrabold mb-3">Mutt Puddles Dog Wash LLC</h3>
+            <h3 className="text-xl font-extrabold mb-3">Mutt Puddles Dog Wash</h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Bonding through grooming. Professional pet grooming and self-service wash facility serving Tacoma, WA since 2007.
             </p>
