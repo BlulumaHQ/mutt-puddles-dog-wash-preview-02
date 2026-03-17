@@ -75,7 +75,7 @@ export const PetGroomer = () => (
 
 export const DogGrooming = () => (
   <ServicePage
-    metaTitle="Dog Grooming in Tacoma, WA | Mutt Puddles Dog Wash LLC"
+    metaTitle="Dog Grooming in Tacoma, WA | Mutt Puddles Dog Wash"
     title="Dog Grooming in Tacoma, WA"
     content={[
       "Our professional dog grooming services are designed to keep your furry friend looking and feeling their best. From basic baths to full grooming packages, we offer a range of services to meet your pet's needs.",
