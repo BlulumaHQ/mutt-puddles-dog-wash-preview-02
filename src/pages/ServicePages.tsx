@@ -92,7 +92,7 @@ export const DogGroomer = () => (
     metaTitle="Dog Groomer in Tacoma, WA | Mutt Puddles Dog Wash"
     title="Dog Groomer in Tacoma, WA"
     content={[
-      "Looking for a reliable dog groomer in Tacoma? Mutt Puddles Dog Wash LLC has been serving pet owners since 2007 with professional grooming services that your furry friend will love.",
+      "Looking for a reliable dog groomer in Tacoma? Mutt Puddles Dog Wash has been serving pet owners since 2007 with professional grooming services that your furry friend will love.",
       "Our groomers treat every pet like family, ensuring a stress-free and enjoyable experience. We take pride in our attention to detail and commitment to your pet's well-being.",
       "Whether you need a simple bath and brush or a complete grooming makeover, we've got you covered."
     ]}

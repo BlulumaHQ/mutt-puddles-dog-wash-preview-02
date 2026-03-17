@@ -94,7 +94,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Badges */}
+      {/* Promos */}
       <section className="py-12 bg-muted">
         <div className="section-container">
           <motion.div
@@ -102,16 +102,22 @@ const Index = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
           >
-            {badges.map((badge) => (
-              <motion.img
-                key={badge.alt}
+            {promos.map((promo) => (
+              <motion.div
+                key={promo.label}
                 variants={item}
-                src={badge.src}
-                alt={badge.alt}
-                className="h-28 md:h-36 w-auto object-contain"
-              />
+                className="flex flex-col items-center text-center gap-3"
+              >
+                <div className="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center">
+                  <promo.icon className="h-7 w-7 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-foreground">{promo.label}</p>
+                  <p className="text-xs text-muted-foreground">{promo.sub}</p>
+                </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
