@@ -15,11 +15,11 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
-const badges = [
-  { src: "/images/Happy-Hour-call-for-details.png", alt: "Happy Hour - Call for Details" },
-  { src: "/images/senior-discounts.png", alt: "Senior Discounts" },
-  { src: "/images/military-discount.png", alt: "Military Discount" },
-  { src: "/images/Police-K-9-FREE.png", alt: "Police K-9 Free" },
+const promos = [
+  { icon: Clock, label: "Happy Hour", sub: "Call for Details" },
+  { icon: Sparkles, label: "Senior Discounts", sub: "Available" },
+  { icon: Medal, label: "Military Discount", sub: "Thank You for Service" },
+  { icon: Shield, label: "Police K-9", sub: "FREE" },
 ];
 
 const services = [
