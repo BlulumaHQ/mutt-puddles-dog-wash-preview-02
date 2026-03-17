@@ -135,7 +135,7 @@ const Index = () => {
                 If you want to treat your pet to a nice grooming session or you want to learn how to groom your dog by yourself, we are the specialists who will offer you the professional services you need. Serving customers in Tacoma, WA, we can offer you grooming services or help you become the pet groomer of your furry friend.
               </p>
               <p className="prose-body text-muted-foreground mb-6">
-                With Mutt Puddles Dog Wash LLC, you will rely on skilled and experienced people.
+                With Mutt Puddles Dog Wash, you will rely on skilled and experienced people.
               </p>
               <Link
                 to="/about-us/"
