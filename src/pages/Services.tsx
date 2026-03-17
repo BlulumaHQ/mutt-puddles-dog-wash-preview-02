@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import SectionHeading from "../components/SectionHeading";
 import { motion } from "framer-motion";
-import { ShowerHead, Scissors, Dog, Sparkles, Heart } from "lucide-react";
+import { ShowerHead, Scissors, Dog, Sparkles, Heart, Clock, Shield, Medal } from "lucide-react";
 
 const services = [
   { icon: ShowerHead, title: "Dog Wash Studio", desc: "Our state-of-the-art studio features clean tubs, professional-grade equipment, and a spa-like atmosphere for your pet.", link: "/dog-wash-studio-tacoma-wa/" },
@@ -17,7 +17,7 @@ const item = { hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transiti
 
 const Services = () => (
   <>
-    <PageMeta title="Services | Mutt Puddles Dog Wash LLC" />
+    <PageMeta title="Services | Mutt Puddles Dog Wash" />
     <section className="py-20 lg:py-28">
       <div className="section-container">
         <SectionHeading
@@ -40,13 +40,25 @@ const Services = () => (
         </motion.div>
       </div>
     </section>
-    {/* Badges */}
+    {/* Promos */}
     <section className="py-12 bg-muted">
-      <div className="section-container grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
-        <img src="/images/Happy-Hour-call-for-details.png" alt="Happy Hour" className="h-28 md:h-36 object-contain" />
-        <img src="/images/senior-discounts.png" alt="Senior Discounts" className="h-28 md:h-36 object-contain" />
-        <img src="/images/military-discount.png" alt="Military Discount" className="h-28 md:h-36 object-contain" />
-        <img src="/images/Police-K-9-FREE.png" alt="Police K-9 Free" className="h-28 md:h-36 object-contain" />
+      <div className="section-container grid grid-cols-2 md:grid-cols-4 gap-6">
+        {[
+          { icon: Clock, label: "Happy Hour", sub: "Call for Details" },
+          { icon: Sparkles, label: "Senior Discounts", sub: "Available" },
+          { icon: Medal, label: "Military Discount", sub: "Thank You for Service" },
+          { icon: Shield, label: "Police K-9", sub: "FREE" },
+        ].map((promo) => (
+          <div key={promo.label} className="flex flex-col items-center text-center gap-3">
+            <div className="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center">
+              <promo.icon className="h-7 w-7 text-primary" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-foreground">{promo.label}</p>
+              <p className="text-xs text-muted-foreground">{promo.sub}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   </>

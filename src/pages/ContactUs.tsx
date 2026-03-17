@@ -5,7 +5,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 const ContactUs = () => (
   <>
-    <PageMeta title="Contact Us | Mutt Puddles Dog Wash LLC" />
+    <PageMeta title="Contact Us | Mutt Puddles Dog Wash" />
     <section className="py-20 lg:py-28">
       <div className="section-container">
         <SectionHeading overline="CONTACT" title="Get in Touch" description="We'd love to hear from you. Send us a message or give us a call!" />

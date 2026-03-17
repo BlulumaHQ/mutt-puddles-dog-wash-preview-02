@@ -33,7 +33,7 @@ const ServicePage = ({ title, metaTitle, content, ctaText, ctaLink }: {
 
 export const DogWashStudio = () => (
   <ServicePage
-    metaTitle="Dog Wash Studio | Mutt Puddles Dog Wash LLC"
+    metaTitle="Dog Wash Studio | Mutt Puddles Dog Wash"
     title="Dog Wash Studio in Tacoma, WA"
     content={[
       "Our dog wash studio is designed to provide a comfortable and enjoyable experience for both you and your pet. We feature state-of-the-art tubs, professional grooming tables, and a relaxing spa-like atmosphere.",
@@ -47,7 +47,7 @@ export const DogWashStudio = () => (
 
 export const ServiceDogWash = () => (
   <ServicePage
-    metaTitle="Self-Service Dog Wash | Mutt Puddles Dog Wash LLC"
+    metaTitle="Self-Service Dog Wash | Mutt Puddles Dog Wash"
     title="Self-Service Dog Wash in Tacoma, WA"
     content={[
       "We offer clean tubs, towels, shampoos, conditioners, and perfumes to clients who want to groom their pets on their own. Our self-service facility presents you with all the professional grooming tools and tables you may need.",
@@ -61,11 +61,11 @@ export const ServiceDogWash = () => (
 
 export const PetGroomer = () => (
   <ServicePage
-    metaTitle="Pet Groomer in Tacoma, WA | Mutt Puddles Dog Wash LLC"
+    metaTitle="Pet Groomer in Tacoma, WA | Mutt Puddles Dog Wash"
     title="Pet Groomer in Tacoma, WA"
     content={[
       "If you want to treat your pet to a nice grooming session, we are the specialists who will offer you the professional services you need. Serving customers in Tacoma, WA, we can offer you grooming services or help you become the pet groomer of your furry friend.",
-      "With Mutt Puddles Dog Wash LLC, you will rely on skilled and experienced people who prioritize your pet's comfort and well-being.",
+      "With Mutt Puddles Dog Wash, you will rely on skilled and experienced people who prioritize your pet's comfort and well-being.",
       "Our groomers are trained to handle all breeds and sizes, ensuring every pet receives personalized care."
     ]}
     ctaText="Book Now"
@@ -75,7 +75,7 @@ export const PetGroomer = () => (
 
 export const DogGrooming = () => (
   <ServicePage
-    metaTitle="Dog Grooming in Tacoma, WA | Mutt Puddles Dog Wash LLC"
+    metaTitle="Dog Grooming in Tacoma, WA | Mutt Puddles Dog Wash"
     title="Dog Grooming in Tacoma, WA"
     content={[
       "Our professional dog grooming services are designed to keep your furry friend looking and feeling their best. From basic baths to full grooming packages, we offer a range of services to meet your pet's needs.",
@@ -89,10 +89,10 @@ export const DogGrooming = () => (
 
 export const DogGroomer = () => (
   <ServicePage
-    metaTitle="Dog Groomer in Tacoma, WA | Mutt Puddles Dog Wash LLC"
+    metaTitle="Dog Groomer in Tacoma, WA | Mutt Puddles Dog Wash"
     title="Dog Groomer in Tacoma, WA"
     content={[
-      "Looking for a reliable dog groomer in Tacoma? Mutt Puddles Dog Wash LLC has been serving pet owners since 2007 with professional grooming services that your furry friend will love.",
+      "Looking for a reliable dog groomer in Tacoma? Mutt Puddles Dog Wash has been serving pet owners since 2007 with professional grooming services that your furry friend will love.",
       "Our groomers treat every pet like family, ensuring a stress-free and enjoyable experience. We take pride in our attention to detail and commitment to your pet's well-being.",
       "Whether you need a simple bath and brush or a complete grooming makeover, we've got you covered."
     ]}

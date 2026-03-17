@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Phone, Scissors, ShowerHead, Star, BadgePercent, Quote } from "lucide-react";
+import { Phone, Scissors, ShowerHead, Star, BadgePercent, Quote, Clock, Shield, Sparkles, Medal } from "lucide-react";
 import PageMeta from "../components/PageMeta";
 import SectionHeading from "../components/SectionHeading";
 import ContactForm from "../components/ContactForm";
@@ -15,11 +15,11 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: [0.25, 0.1, 0.25, 1] as const } },
 };
 
-const badges = [
-  { src: "/images/Happy-Hour-call-for-details.png", alt: "Happy Hour - Call for Details" },
-  { src: "/images/senior-discounts.png", alt: "Senior Discounts" },
-  { src: "/images/military-discount.png", alt: "Military Discount" },
-  { src: "/images/Police-K-9-FREE.png", alt: "Police K-9 Free" },
+const promos = [
+  { icon: Clock, label: "Happy Hour", sub: "Call for Details" },
+  { icon: Sparkles, label: "Senior Discounts", sub: "Available" },
+  { icon: Medal, label: "Military Discount", sub: "Thank You for Service" },
+  { icon: Shield, label: "Police K-9", sub: "FREE" },
 ];
 
 const services = [
@@ -47,7 +47,7 @@ const Index = () => {
   return (
     <>
       <PageMeta
-        title="Home | Mutt Puddles Dog Wash LLC"
+        title="Home | Mutt Puddles Dog Wash"
         description="Professional dog grooming and self-service wash facility in Tacoma, WA. Since 2007, providing a spa-like experience for you and your furry friends."
       />
 
@@ -94,7 +94,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Badges */}
+      {/* Promos */}
       <section className="py-12 bg-muted">
         <div className="section-container">
           <motion.div
@@ -102,16 +102,22 @@ const Index = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
           >
-            {badges.map((badge) => (
-              <motion.img
-                key={badge.alt}
+            {promos.map((promo) => (
+              <motion.div
+                key={promo.label}
                 variants={item}
-                src={badge.src}
-                alt={badge.alt}
-                className="h-28 md:h-36 w-auto object-contain"
-              />
+                className="flex flex-col items-center text-center gap-3"
+              >
+                <div className="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center">
+                  <promo.icon className="h-7 w-7 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-foreground">{promo.label}</p>
+                  <p className="text-xs text-muted-foreground">{promo.sub}</p>
+                </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
@@ -135,7 +141,7 @@ const Index = () => {
                 If you want to treat your pet to a nice grooming session or you want to learn how to groom your dog by yourself, we are the specialists who will offer you the professional services you need. Serving customers in Tacoma, WA, we can offer you grooming services or help you become the pet groomer of your furry friend.
               </p>
               <p className="prose-body text-muted-foreground mb-6">
-                With Mutt Puddles Dog Wash LLC, you will rely on skilled and experienced people.
+                With Mutt Puddles Dog Wash, you will rely on skilled and experienced people.
               </p>
               <Link
                 to="/about-us/"
@@ -254,7 +260,7 @@ const Index = () => {
                 />
               </div>
               <div className="bg-background rounded-card card-shadow p-6">
-                <h3 className="font-extrabold text-lg text-foreground mb-2">Mutt Puddles Dog Wash LLC</h3>
+                <h3 className="font-extrabold text-lg text-foreground mb-2">Mutt Puddles Dog Wash</h3>
                 <p className="text-sm text-muted-foreground mb-1">605 156th St E, Tacoma, WA 98445</p>
                 <a href="tel:2535313387" className="text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
                   (253) 531-3387

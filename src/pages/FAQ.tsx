@@ -15,7 +15,7 @@ const faqs = [
 
 const FAQ = () => (
   <>
-    <PageMeta title="Frequently Asked Questions | Mutt Puddles Dog Wash LLC" />
+    <PageMeta title="Frequently Asked Questions | Mutt Puddles Dog Wash" />
     <section className="py-20 lg:py-28">
       <div className="section-container max-w-3xl">
         <SectionHeading overline="FAQ" title="Frequently Asked Questions" centered />
