@@ -1,6 +1,12 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Scissors, ShowerHead, Star, BadgePercent, Quote, Clock, Shield, Sparkles, Medal } from "lucide-react";
+
+const heroSlides = [
+  { src: "/images/hero-bg.jpg", alt: "Happy golden retriever after grooming" },
+  { src: "/images/hero-bg-2.jpg", alt: "Fluffy white dog being groomed" },
+];
 import PageMeta from "../components/PageMeta";
 import SectionHeading from "../components/SectionHeading";
 import ContactForm from "../components/ContactForm";
