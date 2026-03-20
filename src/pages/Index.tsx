@@ -58,15 +58,7 @@ const Index = () => {
       />
 
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/images/hero-bg.jpg"
-            alt="Mutt Puddles Dog Wash facility"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-foreground/70" />
-        </div>
+      <HeroSlideshow />
         <div className="relative section-container py-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
