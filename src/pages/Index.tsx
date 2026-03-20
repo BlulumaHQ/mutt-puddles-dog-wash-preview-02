@@ -49,6 +49,79 @@ const services = [
   },
 ];
 
+const HeroSlideshow = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % heroSlides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+      <div className="absolute inset-0">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={current}
+            src={heroSlides[current].src}
+            alt={heroSlides[current].alt}
+            className="w-full h-full object-cover object-right"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          />
+        </AnimatePresence>
+        <div className="absolute inset-0 bg-foreground/70" />
+      </div>
+      <div className="relative section-container py-24">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+          className="max-w-2xl"
+        >
+          <p className="overline text-primary mb-4">SINCE 2007</p>
+          <h1 className="heading-display text-primary-foreground mb-6">
+            The Right Pet Groomer in Tacoma, WA for Your Furry Friend
+          </h1>
+          <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8 max-w-xl">
+            Professional grooming services and upscale self-serve wash amenities since 2007.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="tel:2535313387"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-button bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all"
+            >
+              <Phone className="h-4 w-4" />
+              Book an Appointment
+            </a>
+            <Link
+              to="/services/"
+              className="inline-flex items-center px-6 py-3 rounded-button border-2 border-secondary text-secondary-foreground font-semibold text-sm bg-secondary/10 hover:bg-secondary/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
+            >
+              View Services
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+      {/* Slide indicators */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+        {heroSlides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2.5 h-2.5 rounded-full transition-all ${i === current ? "bg-primary w-8" : "bg-primary-foreground/50"}`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
 const Index = () => {
   return (
     <>
@@ -59,38 +132,6 @@ const Index = () => {
 
       {/* Hero */}
       <HeroSlideshow />
-        <div className="relative section-container py-24">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-            className="max-w-2xl"
-          >
-            <p className="overline text-primary mb-4">SINCE 2007</p>
-            <h1 className="heading-display text-primary-foreground mb-6">
-              The Right Pet Groomer in Tacoma, WA for Your Furry Friend
-            </h1>
-            <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8 max-w-xl">
-              Professional grooming services and upscale self-serve wash amenities since 2007.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="tel:2535313387"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-button bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all"
-              >
-                <Phone className="h-4 w-4" />
-                Book an Appointment
-              </a>
-              <Link
-                to="/services/"
-                className="inline-flex items-center px-6 py-3 rounded-button border-2 border-secondary text-secondary-foreground font-semibold text-sm bg-secondary/10 hover:bg-secondary/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
-              >
-                View Services
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Promos */}
       <section className="py-12 bg-muted">
