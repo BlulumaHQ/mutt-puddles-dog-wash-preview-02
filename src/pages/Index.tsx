@@ -161,7 +161,7 @@ const AgitationSection = () => (
         ].map((item) => (
           <motion.div key={item.title} variants={fadeUp} className="p-6">
             <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mx-auto mb-4">
-              <X className="h-6 w-6 text-destructive" />
+              <X_Icon />
             </div>
             <h3 className="font-extrabold text-lg text-foreground mb-2">{item.title}</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
